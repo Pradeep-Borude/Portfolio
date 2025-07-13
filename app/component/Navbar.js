@@ -7,7 +7,7 @@ const Navbar = () => {
   const Navitems = ({ closeSidebar }) => {
     return (
       <ul
-        className={`flex flex-col sm:flex-row gap-5.5 sm:gap-16 items-center sm:text-2xl text-[#1b1b1b] text-3xl sm:font-medium font-bold `}
+        className={`flex flex-col sm:flex-row gap-[30px] sm:gap-16 items-center sm:text-xl text-[#1b1b1b] text-3xl sm:font-medium font-bold `}
       >
         <li className="hover:scale-115">
           <Link href="/" onClick={closeSidebar}>
@@ -20,7 +20,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="hover:scale-105">
-          <Link href="/Blog" onClick={closeSidebar}>
+          <Link href="/projects" onClick={closeSidebar}>
             Projects
           </Link>
         </li>
@@ -58,15 +58,15 @@ const Navbar = () => {
   const closeSidebar = () => setisOpen(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white flex justify-between py-5 sm:py-0 px-10">
-      <div className="flex font-bold items-center text-[#1b1b1b]">
-        <h3>portfolio by</h3>
+    <nav className=" font-azonix sticky top-0 z-50 bg-white flex justify-between py-5 sm:py-0 px-5">
+      <div className="flex items-center  text-[#1b1b1b]">
+        <h3 className="font-thin">portfolio by</h3>
         <img
           className="h-24 w-24 hidden sm:block"
           src="/images/logo.png"
           alt=""
         />
-        <a href="/" className="pl-1.5 sm:pl-0 italic font-medium">
+        <a href="/" className="pl-1.5 sm:pl-0 italic ">
           Mr.Pradeep
         </a>
       </div>
@@ -105,7 +105,7 @@ const Navbar = () => {
             >
               Hello@Mr.pradeep
             </a>
-            <address>Chhtrapati Sambhajinagar , Maharashtra</address>
+            <span className="text-center opacity-65 font-light">Chhtrapati Sambhajinagar , Maharashtra</span>
             <div className="gap-3 flex flex-col">
               <a
                 href="https://github.com/Pradeep-Borude"
@@ -145,7 +145,7 @@ const Navbar = () => {
               </a>
              
             </div>
-            <p className="italic">&copy; created with ❤️ & 🍵 in India.</p>
+            <p className="italic opacity-65">&copy; created with ❤️ & 🍵 in India.</p>
           </div>
         </div>
       </div>
