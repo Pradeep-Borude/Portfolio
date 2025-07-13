@@ -112,7 +112,7 @@ export default function AnimatedText() {
         <img
           className=" sm:h-[580px]  sm:absolute z-0 sm:-top-10 select-none "
           // src="https://cdn.prod.website-files.com/61dd9ddd76c6a058a47a4c57/627a6ebf32659497910541fb_Photo_profil2.webp"
-          src="/images/piro.png"
+          src="/images/myimage.png"
           alt=""
         />
 
