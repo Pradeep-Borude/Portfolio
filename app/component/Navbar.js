@@ -7,23 +7,19 @@ const Navbar = () => {
   const Navitems = ({ closeSidebar }) => {
     return (
       <ul
-        className={`flex flex-col sm:flex-row gap-[30px] sm:gap-16 items-center sm:text-xl text-[#1b1b1b] text-3xl sm:font-medium font-bold `}
+        className={`flex flex-col sm:flex-row gap-5 sm:gap-16 items-center sm:text-xl text-[#1b1b1b] text-3xl sm:font-medium font-bold `}
       >
-        <li className="hover:scale-115">
+        <li className="transition-transform duration-300 hover:scale-110">
           <Link href="/" onClick={closeSidebar}>
             Home
           </Link>
         </li>
-        <li className="hover:scale-115">
+        <li className="transition-transform duration-300 hover:scale-110">
           <Link href="/about" onClick={closeSidebar}>
             About
           </Link>
         </li>
-        <li className="hover:scale-105">
-          <Link href="/projects" onClick={closeSidebar}>
-            Projects
-          </Link>
-        </li>
+       
         <li className="sm:block hidden">
           <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1b1b1b] px-6 font-medium text-neutral-200 transition hover:scale-110">
             <a href="mailto:pradeepborude406@gmail.com">hello@Mr.pradeep</a>
@@ -58,15 +54,15 @@ const Navbar = () => {
   const closeSidebar = () => setisOpen(false);
 
   return (
-    <nav className=" font-azonix sticky top-0 z-50 bg-white flex justify-between py-5 sm:py-0 px-5">
-      <div className="flex items-center  text-[#1b1b1b]">
+    <nav className=" font-azonix sticky top-0 z-50 bg-white flex justify-between py-6 sm:py-0 px-5">
+      <div className="flex items-center  text-[rgb(27,27,27)]">
         <h3 className="font-thin">portfolio by</h3>
         <img
           className="h-24 w-24 hidden sm:block"
           src="/images/logo.png"
           alt=""
         />
-        <a href="/" className="pl-1.5 sm:pl-0 italic ">
+        <a href="/" className="pl-1.5 sm:pl-0 italic transition-transform duration-300 hover:scale-110 ">
           Mr.Pradeep
         </a>
       </div>
