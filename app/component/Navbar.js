@@ -54,11 +54,11 @@ const Navbar = () => {
   const closeSidebar = () => setisOpen(false);
 
   return (
-    <nav className=" font-azonix sticky top-0 z-50 bg-white flex justify-between py-6 sm:py-0 px-5">
+    <nav className=" font-azonix sticky top-0 z-50  flex justify-between  bg-white/60  shadow-md border-b border-white/20 py-6 sm:py-0 px-5">
       <div className="flex items-center  text-[rgb(27,27,27)]">
         <h3 className="font-thin">portfolio by</h3>
         <img
-          className="h-24 w-24 hidden sm:block"
+          className="h-20 w-20 hidden sm:block"
           src="/images/logo.png"
           alt=""
         />

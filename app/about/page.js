@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
+import { Projectvideos } from "../paths.js";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -45,7 +46,7 @@ const Page = () => {
       sections,
       (index) => ({
         opacity: 0,
-        x: index % 2 === 0 ? -100 : 100,
+
       }),
       {
         opacity: 1,
@@ -54,14 +55,19 @@ const Page = () => {
         ease: "power3.out",
         stagger: 0.4,
       }
-    );
 
+    );
+    // animate project LIs on hover
+
+    function animateProjectLIs() {
+
+    }
     // Animate <li> logos with bounce
     const ul = container.querySelector("ul");
     const liElements = ul.querySelectorAll("li");
     ScrollTrigger.create({
       trigger: ul,
-      start: "top 75%",
+      start: "top 75% ",
       once: true,
       onEnter: () => {
         liElements.forEach((li) => {
@@ -81,7 +87,7 @@ const Page = () => {
     const h1Elements = container.querySelectorAll("h1");
     h1Elements.forEach((h1) => {
       const originalText = h1.textContent;
-      h1.innerHTML = ""; // Clear current text
+      h1.innerHTML = "";
 
       originalText.split("").forEach((char, i) => {
         const span = document.createElement("span");
@@ -116,8 +122,8 @@ const Page = () => {
     <>
       {!loaded && <Loader onComplete={() => setLoaded(true)} />}
       {loaded && (
-        <div ref={containerRef} className="sm:px-32">
-          <div className="opacity-0 transition-all animated-section">
+        <div ref={containerRef} className="">
+          <div className=" opacity-0 transition-all animated-section sm:px-32">
             <h1 className="font-azonix text-center text-[#fda228] px-5 py-24" style={{ letterSpacing: "8px" }}>
               Let's get to know each other
             </h1>
@@ -127,16 +133,16 @@ const Page = () => {
             </p>
           </div>
 
-          <div className="opacity-0 transition-all animated-section">
-            <h1 className="text-3xl font-bold font-azonix text-center p-6">
-              I make Websites and I do it well
+          <div className="opacity-0 transition-all animated-section sm:px-32">
+            <h1 className="text-3xl font-bold font-azonix text-center p-5">
+              I make Websites & I do it well
             </h1>
             <p className="p-5 text-center sm:text-3xl">
               By keeping your identity at the heart of my approach, my goal is to find the simplest solution to meet your needs.
             </p>
           </div>
 
-          <div className="flex flex-col p-6 opacity-0 transition-all animated-section">
+          <div className="flex flex-col p-6 opacity-0 transition-all animated-section sm:px-32">
             <h1 className="font-bold font-azonix py-5 text-xl italic text-center sm:text-3xl">
               What I use for development
             </h1>
@@ -153,14 +159,79 @@ const Page = () => {
               <li><FaGithub className="text-white w-16 h-16 bg-black rounded-full p-2" /><p className="font-azonix text-center">GitHub</p></li>
             </ul>
           </div>
-          <h1 className="font-bold font-azonix py-5 text-xl italic text-center sm:text-3xl">
+          {/* // project section */}
+          <div className="bg-[#1b1b1b] text-white flex flex-col items-center text-center">
+            <h1 className="font-bold font-azonix  text-xl italic text-center sm:text-3xl py-12">
               projects
             </h1>
-            <ul className=" flex flex-wrap gap-6 sm:gap-20 justify-center items-center py-8">              <li>project 1</li>
-              <li>project2</li>
-              <li>project 3</li>
-              <li>project 4</li>
+
+            <ul className=" flex-col flex-wrap gap-8 justify-center items-center py-8">
+              {Projectvideos.map((project, index) => (
+                <li key={index} 
+                className="border border-red-600 py-5">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <video
+                      src={project.src}
+                      autoPlay
+                      loop
+                      muted
+                      className="w-64 sm:w-96 h-40 sm:h-64 object-cover rounded-xl"
+                    />
+                    <p className=" py-5">
+                      <span className="font-azonix text-xl ">{project.title}</span>
+                      <br />
+                      {project.desc} <span></span>
+                    </p>
+
+                  </a>
+                </li>
+              ))}
             </ul>
+
+
+
+            {/* <ul className=" items-center text-center flex flex-col gap-6 sm:gap-20 ">
+
+              <li className=" px-2 py-8 rounded-xl">
+                <video
+                  src="/videos/spotify.mp4"
+                  className="w-64 h-36 object-cover rounded-md shadow-lg"
+                  autoPlay
+                  loop
+                  muted
+                />
+                <h1 className="">spotify clone</h1>
+                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt porro voluptatem vel animi rem, et veritatis voluptas quibusdam accusamus quidem aspernatur quos commodi.</p> 
+              </li>
+              <li>
+                <video
+                  src="/videos/coffeeHouse.mp4"
+                  className="w-64 h-36 object-cover rounded-md shadow-lg"
+                  autoPlay
+                  loop
+                  muted
+                />
+              </li>
+              <li>
+                <video
+                  src="/videos/todoList.mp4"
+                  className="w-64 h-36 object-cover rounded-md shadow-lg"
+                  autoPlay
+                  loop
+                  muted
+                />
+              </li>
+              <li>
+                <video
+                  src="/videos/passop.mp4"
+                  className="w-64 h-36 object-cover rounded-md shadow-lg"
+                  autoPlay
+                  loop
+                  muted
+                />
+              </li>
+            </ul> */}
+          </div>
         </div>
       )}
     </>
