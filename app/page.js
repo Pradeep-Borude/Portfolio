@@ -86,7 +86,7 @@ export default function Home() {
             <h1>👋 , My name is pradeep i am</h1>
           </div>
 
-          <div className="overflow-hidden font-azonix text-[#1b1b1b] leading-[3rem] sm:leading-[8.5rem] flex flex-col items-center justify-center relative sm:py-[2%] select-none">
+          <div className=" overflow-hidden font-azonix text-[#1b1b1b] leading-[3rem] sm:leading-[8.5rem] flex flex-col items-center justify-center relative sm:py-[5%] select-none">
             <h1
               ref={textRef1}
               onMouseEnter={() => handleMouseEnter(textRef1, textRef2)}
@@ -139,7 +139,7 @@ export default function Home() {
             src="/images/myimage.png"
             alt=""
           />
-          <h1 className="text-[#1b1b1b] font-medium opacity-65 select-none z-10 absolute top-64 sm:top-[63%] left-6 sm:left-32">
+          <h1 className="text-[#1b1b1b] font-medium opacity-65 select-none z-10 absolute top-64 sm:top-[65%] left-6 sm:left-32">
             based in <br />
             Chh. Sambhajinagar, Maharashtra
           </h1>

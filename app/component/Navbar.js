@@ -7,7 +7,7 @@ const Navbar = () => {
   const Navitems = ({ closeSidebar }) => {
     return (
       <ul
-        className={`flex flex-col sm:flex-row gap-5 sm:gap-16 items-center sm:text-xl text-[#1b1b1b] text-3xl sm:font-medium font-bold `}
+        className={`flex flex-col sm:flex-row gap-5 sm:gap-16 items-center sm:text-xl text-[#1b1b1b] text-3xl sm:font-medium font-bold  `}
       >
         <li className="transition-transform duration-300 hover:scale-110">
           <Link href="/" onClick={closeSidebar}>
@@ -54,7 +54,8 @@ const Navbar = () => {
   const closeSidebar = () => setisOpen(false);
 
   return (
-    <nav className=" font-azonix sticky top-0 z-50  flex justify-between  bg-white/60  shadow-md border-b border-white/20 py-6 sm:py-0 px-5">
+    <nav className=" font-azonix sticky top-0 z-50  flex justify-between pt-6 pb-2 sm:py-0 px-5">
+      <div className="absolute h-full w-full top-0 left-0 backdrop-blur-md bg-white/10 border-b border-white/20 shadow-sm -z-10 "></div>
       <div className="flex items-center  text-[rgb(27,27,27)]">
         <h3 className="font-thin">portfolio by</h3>
         <img
@@ -87,7 +88,7 @@ const Navbar = () => {
         {/* navbar for mobile */}
         <div
           ref={sidebarRef}
-          className="fixed top-20 right-0 w-full h-screen bg-white border-l border-[#1b1b1b] sm:hidden z-20"
+          className="fixed top-[70px] right-0 w-full h-screen bg-white border-l border-[#1b1b1b] sm:hidden z-20"
           style={{ transform: "translateX(100%)" }}
         >
           <Navitems closeSidebar={closeSidebar} />

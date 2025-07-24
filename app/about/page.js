@@ -161,76 +161,38 @@ const Page = () => {
           </div>
           {/* // project section */}
           <div className="bg-[#1b1b1b] text-white flex flex-col items-center text-center">
-            <h1 className="font-bold font-azonix  text-xl italic text-center sm:text-3xl py-12">
-              projects
+            <h1 className="font-bold font-azonix  text-xl italic text-center sm:text-3xl pt-12">
+              Latest projects
             </h1>
 
-            <ul className=" flex-col flex-wrap gap-8 justify-center items-center py-8">
+            <ul className=" flex-col flex-wrap justify-center items-center py-8">
               {Projectvideos.map((project, index) => (
-                <li key={index} 
-                className="border border-red-600 py-5">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <li key={index}
+                  className=" relative h-[425px] w-[300px] z-10 py-5 px-3 mx-6 my-6 rounded-xl overflow-hidden border border-white/20 sm:mx-0 sm:w-[98vw] sm:flex sm:justify-center ">
+                  <img className="absolute blur-[2px] opacity-30 -z-10 top-0 left-0 w-full h-full object-cover rounded-xl" src={project.bgsrc}
+                    alt="" />
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" 
+                  className="sm:flex sm:items-center  sm:justify-around sm:w-full">
                     <video
                       src={project.src}
                       autoPlay
                       loop
                       muted
-                      className="w-64 sm:w-96 h-40 sm:h-64 object-cover rounded-xl"
+                      className="w-64 h-40 object-cover rounded-xl sm:w-[33rem] sm:h-72 flex justify-self-center"
                     />
-                    <p className=" py-5">
-                      <span className="font-azonix text-xl ">{project.title}</span>
+                    <p className=" py-5 flex flex-col justify-between sm:h-[200px] sm:w-[400px]">
+                      <span className="font-azonix text-2xl sm:text-3xl">{project.title}</span>
+                     
                       <br />
-                      {project.desc} <span></span>
+                      <span className="sm:text-xl">
+                      {project.desc} 
+                      </span>
                     </p>
 
                   </a>
                 </li>
               ))}
             </ul>
-
-
-
-            {/* <ul className=" items-center text-center flex flex-col gap-6 sm:gap-20 ">
-
-              <li className=" px-2 py-8 rounded-xl">
-                <video
-                  src="/videos/spotify.mp4"
-                  className="w-64 h-36 object-cover rounded-md shadow-lg"
-                  autoPlay
-                  loop
-                  muted
-                />
-                <h1 className="">spotify clone</h1>
-                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt porro voluptatem vel animi rem, et veritatis voluptas quibusdam accusamus quidem aspernatur quos commodi.</p> 
-              </li>
-              <li>
-                <video
-                  src="/videos/coffeeHouse.mp4"
-                  className="w-64 h-36 object-cover rounded-md shadow-lg"
-                  autoPlay
-                  loop
-                  muted
-                />
-              </li>
-              <li>
-                <video
-                  src="/videos/todoList.mp4"
-                  className="w-64 h-36 object-cover rounded-md shadow-lg"
-                  autoPlay
-                  loop
-                  muted
-                />
-              </li>
-              <li>
-                <video
-                  src="/videos/passop.mp4"
-                  className="w-64 h-36 object-cover rounded-md shadow-lg"
-                  autoPlay
-                  loop
-                  muted
-                />
-              </li>
-            </ul> */}
           </div>
         </div>
       )}
@@ -239,3 +201,7 @@ const Page = () => {
 };
 
 export default Page;
+
+// li +> flex , justify content center
+
+// a => flex , align-item-center
