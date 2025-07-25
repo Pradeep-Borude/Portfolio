@@ -37,7 +37,6 @@ const Page = () => {
 
   useEffect(() => {
     if (!loaded) return;
-
     const container = containerRef.current;
 
     // Animate sections with fade in
@@ -57,11 +56,8 @@ const Page = () => {
       }
 
     );
-    // animate project LIs on hover
-
-    function animateProjectLIs() {
-
-    }
+    
+   
     // Animate <li> logos with bounce
     const ul = container.querySelector("ul");
     const liElements = ul.querySelectorAll("li");
@@ -181,7 +177,7 @@ const Page = () => {
                       className="w-64 h-40 object-cover rounded-xl sm:w-[33rem] sm:h-72 flex justify-self-center"
                     />
                     <p className=" py-5 flex flex-col justify-between sm:h-[200px] sm:w-[400px]">
-                      <span className="font-azonix text-2xl sm:text-3xl">{project.title}</span>
+                      <h1 className="font-azonix text-2xl sm:text-3xl">{project.title}</h1>
                      
                       <br />
                       <span className="sm:text-xl">
@@ -201,7 +197,3 @@ const Page = () => {
 };
 
 export default Page;
-
-// li +> flex , justify content center
-
-// a => flex , align-item-center
