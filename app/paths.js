@@ -9,7 +9,7 @@ export const Projectvideos = [
   },
   {
     src: "/videos/todoList.mp4",
-    link: "https://github.com/Pradeep-Borude/Todo-List",
+    link: "https://github.com/Pradeep-Borude/Todo_List",
     title: "To-Do List",
     desc:"I developed a clean and minimal todo list application using React, Tailwind CSS. It allows users to add, edit, and delete tasks, ensuring task persistence even after refresh.",
     bgsrc: "/images/todo.jpg"

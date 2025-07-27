@@ -52,6 +52,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   const closeSidebar = () => setisOpen(false);
+  const currentYear = new Date().getFullYear();
 
   return (
     <nav className=" font-azonix sticky top-0 z-50  flex justify-between pt-6 pb-2 sm:py-0 px-5">
@@ -142,7 +143,7 @@ const Navbar = () => {
               </a>
              
             </div>
-            <p className="italic opacity-65">&copy; created with ❤️ & 🍵 in India.</p>
+            <p className="italic opacity-65 text-center">&copy;  {currentYear}. created by Mr. pradeep with ❤️ & 🍵 in India.</p>
           </div>
         </div>
       </div>
