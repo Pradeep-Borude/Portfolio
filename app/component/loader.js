@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import Image from 'next/image';
 
 export default function Preloader({ onComplete }) {
   const leftPanelRef = useRef();
@@ -47,7 +48,7 @@ export default function Preloader({ onComplete }) {
         ref={rightPanelRef}
         className="fixed inset-0 bg-[#1b1b1b] origin-bottom-right"
       />
-      <img
+      <Image
         ref={logoRef}
         src="/images/logo.png"
         alt="Logo"

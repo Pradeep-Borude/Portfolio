@@ -4,6 +4,8 @@ import { Projectvideos } from "../paths.js";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from 'next/image';
+
 
 import {
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub, 
@@ -195,7 +197,7 @@ const Page = () => {
                   key={index}
                   className="relative h-[425px] w-[300px] z-10 py-5 px-3 mx-6 my-6 rounded-xl overflow-hidden border border-white/20 sm:mx-0 sm:w-[98vw] sm:flex sm:justify-center"
                 >
-                  <img
+                  <Image
                     className="absolute blur-[2px] opacity-30 -z-10 top-0 left-0 w-full h-full object-cover rounded-xl"
                     src={project.bgsrc}
                     alt=""
@@ -246,7 +248,7 @@ const Page = () => {
           </div>
     <footer className="border-t border-[#1b1b1b] mx-9 py-4">
     <p className="italic opacity-85 text-center font-azonix text-xs flex items-center justify-center">&copy;  {currentYear}. created by 
-    <img
+    <Image
           className="hidden sm:block h-10 w-10 object-contain"
           src="/images/logo.png"
           alt="Logo"

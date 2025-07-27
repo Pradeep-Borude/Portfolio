@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import Loader from "./component/loader.js";
+import Image from 'next/image';
 
 export default function Home() {
   const textRef1 = useRef();
@@ -161,7 +162,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <img
+          <Image
             ref={imageRef}
             className="image absolute sm:h-[590px] sm:top-10 top-50 justify-self-center z-0 opacity-0 select-none"
             src="/images/myimage.png"
@@ -177,7 +178,7 @@ export default function Home() {
           <div className="fixed left-1/2 transform -translate-y-1/2 -translate-x-1/2 bottom-0">
             <button className=" gap-1 group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1b1b1b] px-6 font-medium text-neutral-200 transition hover:scale-110">
               <a href="/images/PradeepBorude-RESUME.pdf" download >Resume</a>
-              <img className="h-7 w-7 backdrop-blur-lg" src="/svgs/download.svg" alt="" />
+              <Image className="h-7 w-7 backdrop-blur-lg" src="/svgs/download.svg" alt="" />
               <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
                 <div className="relative h-full w-8 bg-white/20"></div>
               </div>

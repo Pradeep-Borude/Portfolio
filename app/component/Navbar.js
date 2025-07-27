@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Navbar = () => {
   const Navitems = ({ closeSidebar }) => {
@@ -60,7 +61,7 @@ const Navbar = () => {
       <div className="absolute h-full w-full top-0 left-0 backdrop-blur-md bg-white/10 border-b border-white/20 shadow-sm -z-10 "></div>
       <div className="flex items-center  text-[rgb(27,27,27)]">
         <h3 className="font-thin">portfolio by</h3>
-        <img
+        <Image
           className="h-20 w-20 hidden sm:block"
           src="/images/logo.png"
           alt=""
@@ -75,7 +76,7 @@ const Navbar = () => {
           onClick={() => setisOpen((prev) => !prev)}
           className="sm:hidden flex focus:outline-none"
         >
-          <img
+          <Image
             className="w-10 h-10"
             src={isOpen ? "/svgs/close.svg" : "/svgs/menu.svg"}
             alt="menu"
@@ -96,7 +97,7 @@ const Navbar = () => {
           <Navitems closeSidebar={closeSidebar} />
           <div className=" w-full absolute right-0 flex flex-col items-center gap-5">
             <span className="h-[100px] w-[100px] border flex items-center">
-              <img src="/images/logo.png" alt="" />
+              <Image src="/images/logo.png" alt="" />
             </span>
             <a
               href="mailto:pradeepborude406@gmail.com"
