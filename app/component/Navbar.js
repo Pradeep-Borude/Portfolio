@@ -58,13 +58,15 @@ const Navbar = () => {
       <div className="absolute h-full w-full top-0 left-0 backdrop-blur-md bg-white/10 border-b border-white/20 shadow-sm -z-10"></div>
       <div className="flex items-center text-[rgb(27,27,27)]">
         <h3 className="font-thin">portfolio by</h3>
-        <Image
-          width={32}
-          height={32}
-          className="h-20 w-20 hidden sm:block"
-          src="/images/logo.png"
-          alt="logo"
-        />
+
+<Image
+  src="/images/logo.png"
+  alt="logo"
+  width={80}              
+  height={80}           
+  className="hidden sm:block w-20 h-20"
+/>
+
         <a
           href="/"
           className="pl-1.5 sm:pl-0 italic transition-transform duration-300 hover:scale-110"
@@ -104,8 +106,8 @@ const Navbar = () => {
               <Image
                 src="/images/logo.png"
                 alt="Logo"
-                width={144}
-                height={144}
+                width={100}
+                height={100}
                 className="z-50 pointer-events-auto"
               />
             </span>
