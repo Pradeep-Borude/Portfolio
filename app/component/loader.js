@@ -1,12 +1,12 @@
 "use client";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Preloader({ onComplete }) {
   const leftPanelRef = useRef();
   const rightPanelRef = useRef();
-  const logoRef = useRef();
+  const logoWrapperRef = useRef(); // Animate wrapper instead of <Image>
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -15,7 +15,7 @@ export default function Preloader({ onComplete }) {
       },
     });
 
-    tl.to(logoRef.current, { opacity: 0, duration: 0.5 })
+    tl.to(logoWrapperRef.current, { opacity: 0, duration: 0.5 })
       .to(
         leftPanelRef.current,
         {
@@ -48,12 +48,15 @@ export default function Preloader({ onComplete }) {
         ref={rightPanelRef}
         className="fixed inset-0 bg-[#1b1b1b] origin-bottom-right"
       />
-      <Image
-        ref={logoRef}
-        src="/images/logo.png"
-        alt="Logo"
-        className="w-36 h-36 z-50 pointer-events-auto"
-      />
+      <div ref={logoWrapperRef}>
+        <Image
+          src="/images/logo.png"
+          alt="Logo"
+          width={144}
+          height={144}
+          className="z-50 pointer-events-auto"
+        />
+      </div>
     </div>
   );
 }

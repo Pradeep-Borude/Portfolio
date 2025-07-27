@@ -151,7 +151,7 @@ const Page = () => {
           {/* Section 1 */}
           <div className="opacity-0 transition-all animated-section sm:px-32">
             <h1 className="font-azonix text-center text-[#fda228] px-3 py-24" style={{ letterSpacing: "8px" }}>
-              Let's get to know each other
+            Let&apos;s get to know each other
             </h1>
             <h1 className="sm:text-6xl text-3xl font-bold font-azonix text-center">About</h1>
             <p className="p-5 text-center sm:text-3xl">
@@ -198,9 +198,11 @@ const Page = () => {
                   className="relative h-[425px] w-[300px] z-10 py-5 px-3 mx-6 my-6 rounded-xl overflow-hidden border border-white/20 sm:mx-0 sm:w-[98vw] sm:flex sm:justify-center"
                 >
                   <Image
+                   alt="image"
+                   width={32}
+                   height={32}
                     className="absolute blur-[2px] opacity-30 -z-10 top-0 left-0 w-full h-full object-cover rounded-xl"
                     src={project.bgsrc}
-                    alt=""
                   />
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="sm:flex sm:items-center sm:justify-around sm:w-full">
                     <video
@@ -249,9 +251,11 @@ const Page = () => {
     <footer className="border-t border-[#1b1b1b] mx-9 py-4">
     <p className="italic opacity-85 text-center font-azonix text-xs flex items-center justify-center">&copy;  {currentYear}. created by 
     <Image
+                   alt="image"
+                   width={32}
+                   height={32}
           className="hidden sm:block h-10 w-10 object-contain"
           src="/images/logo.png"
-          alt="Logo"
         />
         - Mr. pradeep with ❤️ & 🍵 in India.</p>
 
