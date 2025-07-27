@@ -4,16 +4,11 @@
 
 @font-face {
   font-family: "Azonix";
-  src: url("/fonts/Azonix.otf") format("opentype");
+  src: url("public/fonts/Azonix.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "Magios";
-  src: url("/fonts/Magios.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
+
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;

@@ -61,7 +61,7 @@ const Navbar = () => {
         <h3 className="font-thin">portfolio by</h3>
         <img
           className="h-20 w-20 hidden sm:block"
-          src="/images/logo.png"
+          src="public/images/logo.png"
           alt=""
         />
         <a href="/" className="pl-1.5 sm:pl-0 italic transition-transform duration-300 hover:scale-110 ">
@@ -95,7 +95,7 @@ const Navbar = () => {
           <Navitems closeSidebar={closeSidebar} />
           <div className=" w-full absolute right-0 flex flex-col items-center gap-5">
             <span className="h-[100px] w-[100px] border flex items-center">
-              <img src="/images/logo.png" alt="" />
+              <img src="public/images/logo.png" alt="" />
             </span>
             <a
               href="mailto:pradeepborude406@gmail.com"
@@ -112,7 +112,7 @@ const Navbar = () => {
                 <span>
                   <img
                     className="w-10 mx-1.5"
-                    src="/images/github.jpg"
+                    src="public/images/github.jpg"
                     alt=""
                   />
                 </span>
@@ -122,7 +122,7 @@ const Navbar = () => {
                 <span>
                   <img
                     className="w-10 mx-1.5"
-                    src="/images/Twitter.jpg"
+                    src="public/images/Twitter.jpg"
                     alt=""
                   />
                 </span>
@@ -135,7 +135,7 @@ const Navbar = () => {
                 <span>
                   <img
                     className="w-10 mx-1.5"
-                    src="/images/linkedin.jpg"
+                    src="public/images/linkedin.jpg"
                     alt=""
                   />
                 </span>

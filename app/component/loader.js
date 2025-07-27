@@ -49,7 +49,7 @@ export default function Preloader({ onComplete }) {
       />
       <img
         ref={logoRef}
-        src="/images/logo.png"
+        src="public/images/logo.png"
         alt="Logo"
         className="w-36 h-36 z-50 pointer-events-auto"
       />

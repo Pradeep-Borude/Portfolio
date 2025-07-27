@@ -248,7 +248,7 @@ const Page = () => {
     <p className="italic opacity-85 text-center font-azonix text-xs flex items-center justify-center">&copy;  {currentYear}. created by 
     <img
           className="hidden sm:block h-10 w-10 object-contain"
-          src="/images/logo.png"
+          src="public/images/logo.png"
           alt="Logo"
         />
         - Mr. pradeep with ❤️ & 🍵 in India.</p>
