@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const Navbar = () => {
   const Navitems = ({ closeSidebar }) => {
@@ -110,21 +111,13 @@ const Navbar = () => {
                 className="flex text-xl items-center "
               >
                 <span>
-                  <img
-                    className="w-10 mx-1.5"
-                    src="/images/github.jpg"
-                    alt=""
-                  />
+                <FaGithub className="text-gray-800 text-2xl hover:scale-110 transition-transform h-8 w-8 mx-2" />
                 </span>
                 <span>github</span>
               </a>
               <a href="" className="flex text-xl items-center">
                 <span>
-                  <img
-                    className="w-10 mx-1.5"
-                    src="/images/Twitter.jpg"
-                    alt=""
-                  />
+                <FaTwitter className="text-blue-400 text-2xl hover:scale-110 transition-transform h-8 w-8 mx-2" />
                 </span>
                 <span>Twitter</span>
               </a>
@@ -133,11 +126,7 @@ const Navbar = () => {
                 className="flex text-xl items-center"
               >
                 <span>
-                  <img
-                    className="w-10 mx-1.5"
-                    src="/images/linkedin.jpg"
-                    alt=""
-                  />
+                <FaLinkedin className="text-blue-600 text-2xl hover:scale-110 transition-transform h-8 w-8 mx-2" />
                 </span>
                 <span>LinkedIn</span>
               </a>

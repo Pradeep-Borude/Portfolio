@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Azonix";
-  src: url("/public/") format("opentype");
+  src: url("/fonts/Azonix.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
