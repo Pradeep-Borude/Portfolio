@@ -195,7 +195,7 @@ export default function Home() {
        {/* Social Links (LinkedIn, GitHub, Twitter) */}
 <div className="hidden absolute bottom-6 left-6 sm:flex gap-5 text-white text-2xl">
   <a
-    href="https://linkedin.com/in/pradeepborude"
+    href="www.linkedin.com/in/pradeep-borude-7854422b3"
     target="_blank"
     rel="noopener noreferrer"
     className="text-black hover:scale-110 transition-colors duration-300"
