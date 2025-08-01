@@ -243,7 +243,7 @@ const Page = () => {
             <a href="mailto:pradeepborude406@gmail.com" className="hover:line-through underline"> pradeepborude406@gmail.com</a>
             <br />
             on the internet: 
-            <a href="www.linkedin.com/in/pradeep-borude-7854422b3" className="hover:line-through underline hover:font-medium">LinkedIn </a>/
+            <a href="https://www.linkedin.com/in/pradeep-borude-7854422b3/" className="hover:line-through underline hover:font-medium">LinkedIn </a>/
             <a href="https://x.com/pradeepBorude01" className="hover:line-through underline hover:font-medium">Twitter </a>/
             <a href="https://www.instagram.com/pradeep_borude/profilecard/?igsh=YXc4NzhiZXh5aTNl" className="hover:line-through underline hover:font-medium ">Instagram </a>/
            </p>
