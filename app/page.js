@@ -185,7 +185,7 @@ export default function Home() {
 
 
 
-          <h1 className="font-azonix text-[#1b1b1b] font-medium opacity-65 select-none z-10 absolute top-64 sm:top-[65%] left-6 sm:left-32">
+          <h1 className="font-azonix text-[#1b1b1b] font-medium opacity-65 select-none z-10 absolute top-64 sm:top-[75%] left-6 sm:left-32">
             based in <br />
             Chh. Sambhajinagar,
             <br /> Maharashtra.
