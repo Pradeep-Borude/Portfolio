@@ -169,7 +169,7 @@ export default function Home() {
     ref={imageRef}
     className="image z-0 opacity-0 select-none
                absolute top-[5%] sm:top-[10%] left-1/2 -translate-x-1/2
-               w-full max-h-[80vh] h-auto
+               w-full max-h-[90vh] h-auto
                sm:h-[100vh] lg:h-[100vh] sm:w-auto" 
     src="/images/myimage.png"
     alt="moving-image"
