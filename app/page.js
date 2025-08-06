@@ -161,12 +161,12 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className=" border border-red-600 h-screen flex top-[10%] justify-center sm:fixed sm:inset-0 sm:items-center pointer-events-none">
+          <div className="relative h-screen sm:fixed sm:inset-0 pointer-events-none">
   <Image
     ref={imageRef}
     className="image z-0 opacity-0 select-none
-               relative sm:absolute
-               w-full max-w-[100%] h-auto
+               absolute top-[10%] left-1/2 -translate-x-1/2
+               w-full max-h-[80vh] h-auto
                sm:h-[70vh] lg:h-[90vh] sm:w-auto" 
     src="/images/myimage.png"
     alt="moving-image"
@@ -174,6 +174,7 @@ export default function Home() {
     height={1200}
   />
 </div>
+
 
 
 
