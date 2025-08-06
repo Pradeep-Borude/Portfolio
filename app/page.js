@@ -166,14 +166,15 @@ export default function Home() {
     ref={imageRef}
     className="image z-0 opacity-0 select-none
                relative sm:absolute
-               h-screen sm:h-[70vh] lg:h-[90vh] 
-               w-auto" 
+               w-full max-w-[100%] h-auto
+               sm:h-[70vh] lg:h-[90vh] sm:w-auto" 
     src="/images/myimage.png"
     alt="moving-image"
     width={800}
     height={1200}
   />
 </div>
+
 
 
 
