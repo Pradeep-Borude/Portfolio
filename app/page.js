@@ -164,8 +164,9 @@ export default function Home() {
           <div className="h-screen flex items-end justify-center sm:fixed sm:inset-0 sm:items-center pointer-events-none">
   <Image
     ref={imageRef}
-    className="image z-0 opacity-0 select-none 
-               h-[50vh] sm:h-[70vh] lg:h-[90vh] 
+    className="image z-0 opacity-0 select-none
+               relative sm:absolute
+               h-screen sm:h-[70vh] lg:h-[90vh] 
                w-auto" 
     src="/images/myimage.png"
     alt="moving-image"
@@ -173,6 +174,7 @@ export default function Home() {
     height={1200}
   />
 </div>
+
 
 
 
