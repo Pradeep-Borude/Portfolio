@@ -161,7 +161,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="flex items-end sm:fixed sm:inset-0 sm:flex sm:items-center justify-center pointer-events-none">
+          <div className="h-screen flex items-end justify-center sm:fixed sm:inset-0 sm:items-center pointer-events-none">
   <Image
     ref={imageRef}
     className="image z-0 opacity-0 select-none 
@@ -173,6 +173,7 @@ export default function Home() {
     height={1200}
   />
 </div>
+
 
 
 
