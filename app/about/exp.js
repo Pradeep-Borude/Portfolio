@@ -112,8 +112,7 @@ export default function Home() {
             <h1>👋 , My name is Pradeep. I&apos;m a</h1>
           </div>
 
-        {/* Text section */}
-        <div className="lg:absolute lg:inset-0 lg:flex lg:items-center lg:justify-center">
+          <div className="lg:fixed lg:inset-0 lg:flex lg:items-center lg:justify-center">
   <div className="overflow-hidden font-azonix text-[#1b1b1b] leading-[3rem] sm:leading-[12vw] flex flex-col items-center justify-center relative sm:py-[5%] select-none">
     <h1
       ref={textRef1}
@@ -164,6 +163,7 @@ export default function Home() {
   </div>
 </div>
 
+
           <div className="relative z-0 sm:fixed sm:inset-0 pointer-events-none">
   <Image
     ref={imageRef}
@@ -177,6 +177,13 @@ export default function Home() {
     height={1200}
   />
 </div>
+
+
+
+
+
+
+
 
           <h1 className="font-azonix text-[#1b1b1b] font-medium opacity-65 select-none z-10 absolute top-64 sm:top-[75%] left-6 sm:left-32">
             based in <br />
