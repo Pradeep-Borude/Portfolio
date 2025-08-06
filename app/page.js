@@ -112,12 +112,12 @@ export default function Home() {
             <h1>👋 , My name is Pradeep. I&apos;m a</h1>
           </div>
 
-          <div className="overflow-hidden font-azonix text-[#1b1b1b] leading-[3rem] sm:leading-[8.5rem] flex flex-col items-center justify-center relative sm:py-[5%] select-none">
+          <div className="overflow-hidden font-azonix text-[#1b1b1b] leading-[3rem] sm:leading-[12vw] flex flex-col items-center justify-center relative sm:py-[5%] select-none">
             <h1
               ref={textRef1}
               onMouseEnter={() => handleMouseEnter(textRef1, textRef2)}
               onMouseLeave={handleMouseLeave}
-              className="text-[3rem] sm:text-[10.4rem] font-medium relative"
+              className="text-[3rem] sm:text-[13vw] font-medium relative"
               style={{
                 color: "#1b1b1b",
                 WebkitTextStroke: "0px #1b1b1b",
@@ -127,7 +127,7 @@ export default function Home() {
               Fullstack
               <span
                 ref={textRef11}
-                className="absolute text-[3rem] sm:text-[10.4rem] font-medium text-transparent z-10 top-0 left-0"
+                className="absolute text-[3rem] sm:text-[13vw] font-medium text-transparent z-10 top-0 left-0"
                 style={{
                   WebkitTextStroke: "2px white",
                 }}
@@ -140,7 +140,7 @@ export default function Home() {
               ref={textRef2}
               onMouseEnter={() => handleMouseEnter(textRef2, textRef1)}
               onMouseLeave={handleMouseLeave}
-              className="text-[3rem] sm:text-[10.4rem] font-medium relative"
+              className="text-[3rem] sm:text-[13vw] font-medium relative"
               style={{
                 color: "white",
                 WebkitTextStroke: "2px #1b1b1b",
@@ -151,7 +151,7 @@ export default function Home() {
               <span
                 onMouseEnter={() => outlineNo(textRef11)}
                 onMouseLeave={() => outlineYes(textRef11)}
-                className="absolute text-[3rem] sm:text-[10.4rem] font-medium text-transparent z-10 top-0 left-0 opacity-0 hover:opacity-100"
+                className="absolute text-[3rem] sm:text-[13vw] font-medium text-transparent z-10 top-0 left-0 opacity-0 hover:opacity-100"
                 style={{
                   WebkitTextStroke: "2px white",
                 }}
@@ -161,14 +161,21 @@ export default function Home() {
             </h1>
           </div>
 
-          <Image
-            ref={imageRef}
-            className="image absolute sm:h-[590px] sm:top-10 top-50 justify-self-center z-0 opacity-0 select-none"
-            src="/images/myimage.png"
-            alt="moving-image"
-            width={400}
-            height={500}
-          />
+          <div className="flex items-end sm:fixed sm:inset-0 sm:flex sm:items-center justify-center pointer-events-none">
+  <Image
+    ref={imageRef}
+    className="image z-0 opacity-0 select-none 
+               h-[50vh] sm:h-[70vh] lg:h-[90vh] 
+               w-auto" 
+    src="/images/myimage.png"
+    alt="moving-image"
+    width={800}
+    height={1200}
+  />
+</div>
+
+
+
 
           <h1 className="font-azonix text-[#1b1b1b] font-medium opacity-65 select-none z-10 absolute top-64 sm:top-[65%] left-6 sm:left-32">
             based in <br />
