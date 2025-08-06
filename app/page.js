@@ -161,7 +161,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className=" border border-red-600 h-screen flex items-end justify-center sm:fixed sm:inset-0 sm:items-center pointer-events-none">
+          <div className=" border border-red-600 h-screen flex top-1/4 justify-center sm:fixed sm:inset-0 sm:items-center pointer-events-none">
   <Image
     ref={imageRef}
     className="image z-0 opacity-0 select-none
