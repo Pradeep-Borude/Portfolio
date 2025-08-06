@@ -112,56 +112,59 @@ export default function Home() {
             <h1>👋 , My name is Pradeep. I&apos;m a</h1>
           </div>
 
-          <div className="overflow-hidden font-azonix text-[#1b1b1b] leading-[3rem] sm:leading-[12vw] flex flex-col items-center justify-center relative sm:py-[5%] select-none">
-            <h1
-              ref={textRef1}
-              onMouseEnter={() => handleMouseEnter(textRef1, textRef2)}
-              onMouseLeave={handleMouseLeave}
-              className="text-[3rem] sm:text-[13vw] font-medium relative"
-              style={{
-                color: "#1b1b1b",
-                WebkitTextStroke: "0px #1b1b1b",
-                left: "-100%",
-              }}
-            >
-              Fullstack
-              <span
-                ref={textRef11}
-                className="absolute text-[3rem] sm:text-[13vw] font-medium text-transparent z-10 top-0 left-0"
-                style={{
-                  WebkitTextStroke: "2px white",
-                }}
-              >
-                Fullstack
-              </span>
-            </h1>
+          <div className="lg:fixed lg:inset-0 lg:flex lg:items-center lg:justify-center">
+  <div className="overflow-hidden font-azonix text-[#1b1b1b] leading-[3rem] sm:leading-[12vw] flex flex-col items-center justify-center relative sm:py-[5%] select-none">
+    <h1
+      ref={textRef1}
+      onMouseEnter={() => handleMouseEnter(textRef1, textRef2)}
+      onMouseLeave={handleMouseLeave}
+      className="text-[3rem] sm:text-[13vw] font-medium relative"
+      style={{
+        color: "#1b1b1b",
+        WebkitTextStroke: "0px #1b1b1b",
+        left: "-100%",
+      }}
+    >
+      Fullstack
+      <span
+        ref={textRef11}
+        className="absolute text-[3rem] sm:text-[13vw] font-medium text-transparent z-10 top-0 left-0"
+        style={{
+          WebkitTextStroke: "2px white",
+        }}
+      >
+        Fullstack
+      </span>
+    </h1>
 
-            <h1
-              ref={textRef2}
-              onMouseEnter={() => handleMouseEnter(textRef2, textRef1)}
-              onMouseLeave={handleMouseLeave}
-              className="text-[3rem] sm:text-[13vw] font-medium relative"
-              style={{
-                color: "white",
-                WebkitTextStroke: "2px #1b1b1b",
-                right: "-100%",
-              }}
-            >
-              Developer
-              <span
-                onMouseEnter={() => outlineNo(textRef11)}
-                onMouseLeave={() => outlineYes(textRef11)}
-                className="absolute text-[3rem] sm:text-[13vw] font-medium text-transparent z-10 top-0 left-0 opacity-0 hover:opacity-100"
-                style={{
-                  WebkitTextStroke: "2px white",
-                }}
-              >
-                Developer
-              </span>
-            </h1>
-          </div>
+    <h1
+      ref={textRef2}
+      onMouseEnter={() => handleMouseEnter(textRef2, textRef1)}
+      onMouseLeave={handleMouseLeave}
+      className="text-[3rem] sm:text-[13vw] font-medium relative"
+      style={{
+        color: "white",
+        WebkitTextStroke: "2px #1b1b1b",
+        right: "-100%",
+      }}
+    >
+      Developer
+      <span
+        onMouseEnter={() => outlineNo(textRef11)}
+        onMouseLeave={() => outlineYes(textRef11)}
+        className="absolute text-[3rem] sm:text-[13vw] font-medium text-transparent z-10 top-0 left-0 opacity-0 hover:opacity-100"
+        style={{
+          WebkitTextStroke: "2px white",
+        }}
+      >
+        Developer
+      </span>
+    </h1>
+  </div>
+</div>
 
-          <div className="relative h-screen sm:fixed sm:inset-0 pointer-events-none">
+
+          <div className="relative sm:fixed sm:inset-0 pointer-events-none">
   <Image
     ref={imageRef}
     className="image z-0 opacity-0 select-none
