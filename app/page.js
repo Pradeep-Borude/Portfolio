@@ -169,7 +169,7 @@ export default function Home() {
     ref={imageRef}
     className="image z-0 opacity-0 select-none
                absolute top-[5%] sm:top-[10%] left-1/2 -translate-x-1/2
-               w-full max-h-[90vh] h-auto
+               w-auto max-h-[70vh] -pt-8 sm:pt-0 sm:max-h-[90vh] h-auto
                sm:h-[100vh] lg:h-[100vh] sm:w-auto" 
     src="/images/myimage.png"
     alt="moving-image"
@@ -178,10 +178,10 @@ export default function Home() {
   />
 </div>
 
-          <h1 className="font-azonix text-[#1b1b1b] font-medium opacity-65 select-none z-10 absolute top-64 sm:top-[75%] left-6 sm:left-32">
+          <h1 className="font-azonix text-[#1b1b1b] text-[10px] sm:text-[13px] opacity-65 select-none z-10 absolute top-64 sm:top-[75%] left-6 sm:left-32">
             based in <br />
             Chh. Sambhajinagar,
-            <br /> Maharashtra.
+            <br/> Maharashtra.
           </h1>
 
           {/* Resume Button */}
