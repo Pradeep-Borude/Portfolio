@@ -187,7 +187,7 @@ export default function Home() {
           {/* Resume Button */}
           <div className="fixed left-1/2 transform -translate-y-1/2 -translate-x-1/2 bottom-0">
             <button className="gap-1 group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1b1b1b] px-6 font-medium text-neutral-200 transition hover:scale-110">
-              <a href="/images/PradeepBorude-RESUME.pdf" download>Resume</a>
+              <a href="https://drive.google.com/file/d/1wdPAYNrcf3gRBZZkUAwZWYcnhY2DOf6K/view?usp=sharing" target="_blank">Resume</a>
               <Image
                 src="/svgs/download.svg"
                 alt="Download Resume"
