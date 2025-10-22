@@ -175,6 +175,7 @@ export default function Home() {
     alt="moving-image"
     width={800}
     height={1200}
+     loading="eager"
   />
 </div>
 
